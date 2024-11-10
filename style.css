@@ -1,7 +1,7 @@
 /* General Body Styling */
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #f0f4f8;
+    background-color: #f8f9fc;
     color: #333;
     margin: 0;
     padding: 0;
@@ -20,14 +20,14 @@ body {
 /* Heading Styles */
 h1, h2 {
     font-family: 'Montserrat', sans-serif;
-    color: #1a73e8; /* Deep blue for primary color */
+    color: #6a1b9a; /* Soft purple for primary headings */
 }
 
 /* Form Section and Results Styling */
 #form-section, #results {
     margin-top: 20px;
     padding: 20px;
-    background-color: #f8fafc; /* Light background for sections */
+    background-color: #f3e5f5; /* Light lavender background */
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
@@ -37,7 +37,7 @@ label {
     display: block;
     margin-top: 15px;
     font-weight: bold;
-    color: #3a3a3a;
+    color: #333;
 }
 
 /* Text Input Styling */
@@ -45,7 +45,7 @@ input[type="text"] {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #cfd8dc;
+    border: 1px solid #c5cae9;
     border-radius: 4px;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
@@ -58,7 +58,7 @@ button {
     padding: 12px 20px;
     font-size: 16px;
     color: #ffffff;
-    background-color: #4CAF50; /* Soft green for action buttons */
+    background-color: #42a5f5; /* Soft blue for buttons */
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -66,13 +66,13 @@ button {
 }
 
 button:hover {
-    background-color: #388e3c;
+    background-color: #1e88e5;
 }
 
 /* Tutorial and Report Section Titles */
 #tutorial, #results {
     font-family: 'Roboto', sans-serif;
-    color: #4CAF50; /* Green accents for healthcare theme */
+    color: #7b1fa2; /* Purple for section titles */
     font-weight: bold;
 }
 
@@ -91,9 +91,9 @@ button:hover {
 }
 
 #results li {
-    background-color: #e3f2fd; /* Light blue for results cards */
+    background-color: #e1f5fe; /* Light blue for results cards */
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 10px;
+    color: #333;
 }
-
