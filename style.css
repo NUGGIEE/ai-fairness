@@ -1,49 +1,99 @@
+/* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f4f8;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
+/* Container for Centered Content */
 .container {
     width: 60%;
     margin: auto;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Heading Styles */
 h1, h2 {
-    color: #4CAF50;
+    font-family: 'Montserrat', sans-serif;
+    color: #1a73e8; /* Deep blue for primary color */
 }
 
+/* Form Section and Results Styling */
 #form-section, #results {
     margin-top: 20px;
+    padding: 20px;
+    background-color: #f8fafc; /* Light background for sections */
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+/* Label Styles */
 label {
     display: block;
-    margin-top: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #3a3a3a;
 }
 
+/* Text Input Styling */
 input[type="text"] {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #cfd8dc;
     border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    background-color: #ffffff;
 }
 
+/* Button Styling */
 button {
-    margin-top: 15px;
-    padding: 10px 15px;
-    color: #fff;
-    background-color: #4CAF50;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #4CAF50; /* Soft green for action buttons */
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #388e3c;
 }
+
+/* Tutorial and Report Section Titles */
+#tutorial, #results {
+    font-family: 'Roboto', sans-serif;
+    color: #4CAF50; /* Green accents for healthcare theme */
+    font-weight: bold;
+}
+
+/* List Styling in Tutorial Section */
+#tutorial ol {
+    margin: 0;
+    padding-left: 20px;
+    color: #3a3a3a;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Style for Data Display Cards in Report Section */
+#results ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#results li {
+    background-color: #e3f2fd; /* Light blue for results cards */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
