@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fairness Tool</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Fairness Tool</h1>
+        <p>Welcome to the AI Fairness Checker! This tool evaluates bias in machine learning models using fairness metrics such as Demographic Parity and Equalized Odds.</p>
+
+        <section id="tutorial">
+            <h2>Tutorial</h2>
+            <p>To use this tool:</p>
+            <ol>
+                <li>Provide the model's <strong>True Labels</strong> (actual outcomes), <strong>Predictions</strong> (model's predictions), and <strong>Protected Attribute</strong> (e.g., group labels).</li>
+                <li>Enter each as a comma-separated list. Example: <code>0,1,1,0,1</code></li>
+                <li>Click <strong>Check Bias</strong> to see the bias metrics.</li>
+            </ol>
+        </section>
+
+        <section id="form-section">
+            <h2>Check for Bias</h2>
+            <form method="POST" action="/check_bias">
+                <label for="y_true">True Labels:</label>
+                <input type="text" id="y_true" name="y_true" required placeholder="e.g., 1,0,1,1,0">
+                
+                <label for="y_pred">Predictions:</label>
+                <input type="text" id="y_pred" name="y_pred" required placeholder="e.g., 0,1,1,0,1">
+                
+                <label for="protected_attribute">Protected Attribute:</label>
+                <input type="text" id="protected_attribute" name="protected_attribute" required placeholder="e.g., 0,1,0,1,0">
+                
+                <button type="submit">Check Bias</button>
+            </form>
+        </section>
+
+        {% if results %}
+        <section id="results">
+            <h2>Results</h2>
+            <p><strong>Accuracy:</strong> {{ results.accuracy }}</p>
+            <p><strong>Demographic Parity:</strong> {{ results.demographic_parity }}</p>
+            <p><strong>Equalized Odds:</strong></p>
+            <ul>
+                {% for group, metrics in results.equalized_odds.items() %}
+                <li>Group {{ group }}: FPR = {{ metrics.FPR }}, FNR = {{ metrics.FNR }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
+    </div>
+</body>
+</html>
