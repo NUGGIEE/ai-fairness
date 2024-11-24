@@ -7,10 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
         <h1>AI Fairness Tool</h1>
         <p>Welcome to the AI Fairness Checker! This tool evaluates bias in machine learning models using fairness metrics such as Demographic Parity and Equalized Odds.</p>
+
+        <section id="about-ai">
+            <h3>About the AI Fairness Measurer</h3>
+            <p>
+                The AI Fairness Measurer is designed to help you evaluate fairness in machine learning models. By comparing <strong>True Labels</strong>, 
+                <strong>Predictions</strong>, and <strong>Protected Attributes</strong>, this tool identifies potential biases and ensures equitable treatment for all groups.
+            </p>
+            <div class="steps-container">
+                <p><strong>Steps to Use:</strong></p>
+                <ul>
+                    <li>
+                        <strong>Prepare Your Data:</strong> Format your data into three columns (True Labels, Predictions, Protected Attribute). Example:
+                        <div class="data-example">
+<pre>
+True Labels,Predictions,Protected Attribute
+1,1,Group A
+0,0,Group B
+1,1,Group A
+1,0,Group B
+</pre>
+                        </div>
+                    </li>
+                    <li><strong>Upload or Input:</strong> Use the form below to enter your data in the required format.</li>
+                    <li><strong>Run the Analysis:</strong> Click "Check Bias" to calculate fairness metrics and get a detailed report.</li>
+                </ul>
+            </div>
+            <p>
+                This tool empowers developers to detect and mitigate biases, ensuring their AI models perform equitably across diverse populations.
+            </p>
+        </section>
 
         <section id="tutorial">
             <h2>Tutorial</h2>
@@ -20,32 +49,6 @@
                 <li>Enter each as a comma-separated list. Example: <code>0,1,1,0,1</code></li>
                 <li>Click <strong>Check Bias</strong> to see the bias metrics.</li>
             </ol>
-
-            <h3>About the AI Fairness Measurer</h3>
-            <p>
-                This tool helps you evaluate fairness in AI models by comparing their <strong>True Labels</strong>, 
-                <strong>Predictions</strong>, and <strong>Protected Attributes</strong>. You can use it to identify biases 
-                in your machine learning models and ensure they treat different groups equitably.
-            </p>
-            <p>
-                <strong>Steps to Use:</strong>
-            </p>
-            <ul>
-                <li><strong>Prepare Your Data:</strong> Organize your data in three columns (True Labels, Predictions, Protected Attribute). Example CSV format:
-                    <pre>
-True Labels,Predictions,Protected Attribute
-1,1,Group A
-0,0,Group B
-1,1,Group A
-1,0,Group B
-                    </pre>
-                </li>
-                <li><strong>Upload or Input:</strong> Use the form below to enter your data in the required format.</li>
-                <li><strong>Run the Analysis:</strong> Click "Check Bias" to calculate fairness metrics.</li>
-            </ul>
-            <p>
-                Using this tool, you can detect potential biases and adjust your model for more equitable performance.
-            </p>
         </section>
 
         <section id="form-section">
