@@ -32,23 +32,76 @@ h2 {
     padding-bottom: 5px;
 }
 
-/* Tutorial and Report Section Titles */
-#tutorial, #results {
-    font-family: 'Roboto', sans-serif;
-    color: #512da8; /* Deep purple for section titles */
-    font-weight: bold;
-}
-
-/* Form Section and Results Styling */
-#form-section, #results {
-    margin-top: 20px;
+/* About AI Section */
+#about-ai {
+    margin-top: 30px;
     padding: 20px;
     background-color: #ede7f6; /* Light lavender background */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Label Styles */
+#about-ai h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #6a1b9a; /* Soft purple for headings */
+    margin-bottom: 15px;
+}
+
+#about-ai p {
+    color: #424242; /* Neutral dark grey for body text */
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+}
+
+.steps-container {
+    margin-top: 20px;
+}
+
+.steps-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #3a3a3a;
+}
+
+.steps-container ul li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.steps-container ul li strong {
+    color: #512da8; /* Highlighted deep purple for key steps */
+}
+
+.data-example {
+    background-color: #e3f2fd; /* Light blue background for code snippet */
+    border-left: 4px solid #42a5f5; /* Blue accent bar */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for data example */
+    color: #333;
+    white-space: pre-wrap;
+}
+
+.data-example pre {
+    margin: 0;
+}
+
+/* Tutorial Section */
+#tutorial ol {
+    margin: 0;
+    padding-left: 20px;
+    color: #3a3a3a;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#tutorial ol li {
+    margin-bottom: 10px;
+}
+
+/* Form Section */
 label {
     display: block;
     margin-top: 15px;
@@ -56,7 +109,6 @@ label {
     color: #303f9f; /* Medium blue for labels */
 }
 
-/* Text Input Styling */
 input[type="text"] {
     width: 100%;
     padding: 12px;
@@ -75,57 +127,13 @@ input[type="text"]:focus {
     outline: none;
 }
 
-/* Button Styling */
 button {
     margin-top: 20px;
     padding: 12px 20px;
     font-size: 16px;
     color: #ffffff;
-    background-color: #42a5f5; /* Soft blue for buttons */
+    background-color: #42a5f5;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-button:hover {
-    background-color: #1e88e5; /* Darker blue on hover */
-    transform: scale(1.05); /* Slight grow effect */
-}
-
-/* List Styling in Tutorial Section */
-#tutorial ol {
-    margin: 0;
-    padding-left: 20px;
-    color: #3a3a3a;
-    font-family: 'Open Sans', sans-serif;
-}
-
-#tutorial ol li {
-    margin-bottom: 10px;
-}
-
-/* Style for Data Display Cards in Report Section */
-#results ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#results li {
-    background-color: #e3f2fd; /* Light blue for results cards */
-    padding: 10px;
-    border-radius: 6px;
-    margin-bottom: 10px;
-    color: #333;
-    border: 1px solid #90caf9; /* Light blue border for results */
-}
-
-/* Footer Styling (if added later) */
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #6a1b9a; /* Soft purple footer */
-    color: #ffffff;
-    font-family: 'Lato', sans-serif;
-}
+    transition: background-color 0.3s ea
